@@ -140,7 +140,7 @@ export default function App() {
 
   const orderText = useMemo(() => {
     return [
-      `AHSHA CATERING — SUB SANDWICH ORDER`,
+      `SHA'S SALAD — SUB SANDWICH ORDER`,
       `Order: ${orderNumber || "(not placed yet)"}`,
       `--------------------------------`,
       `Name: ${fullName || "—"}`,
@@ -182,8 +182,8 @@ export default function App() {
     const isEmail = contact.includes("@");
     const payload = {
       access_key: accessKey.trim(),
-      subject: `New Sub Order ${newOrderNo} — ${fullName} | Ahsha Catering`,
-      from_name: "Ahsha Catering Order Form",
+      subject: `New Sub Order ${newOrderNo} — ${fullName} | Sha's Salad`,
+      from_name: "Sha's Salad Order Form",
       name: fullName.trim(),
       email: isEmail ? contact.trim() : undefined,
       phone: !isEmail && contact ? contact.trim() : undefined,
@@ -247,7 +247,7 @@ export default function App() {
       {/* Announcement */}
       <div className="bg-[#1A2E22] px-4 py-2.5 text-center">
         <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#F3EAD8] sm:text-xs">
-          Ahsha Catering • Group sub orders now open • White bread • Circle your choices below
+          Sha's Salad • Group sub orders now open • White bread • Circle your choices below
         </p>
       </div>
 
@@ -256,11 +256,11 @@ export default function App() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1A2E22] font-serif text-xl font-bold text-[#FAF5EB]">
-              A
+              S
             </div>
             <div className="leading-tight">
-              <p className="font-serif text-xl font-bold tracking-tight text-[#1A2E22]">Ahsha</p>
-              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#C65D3A]">Catering</p>
+              <p className="font-serif text-xl font-bold tracking-tight text-[#1A2E22]">Sha's</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#C65D3A]">Salad</p>
             </div>
           </div>
           <nav className="hidden items-center gap-7 text-sm font-medium text-stone-600 md:flex">
@@ -293,7 +293,7 @@ export default function App() {
             </h1>
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-stone-600 sm:text-base">
               Sign in with your name, pick Ham or Turkey, choose your cheese, veggies & condiments — and hit submit.
-              Your order goes straight to Ahsha Catering via Web3Forms. No account, no fuss.
+              Your order goes straight to Sha's Salad via Web3Forms. No account, no fuss.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <a
@@ -380,7 +380,7 @@ export default function App() {
             </div>
             <div className="animate-floaty absolute -right-2 bottom-20 hidden rounded-2xl border border-[#E8DDC9] bg-[#1A2E22] px-4 py-3 text-white shadow-xl lg:block" style={{ animationDelay: "1.2s" }}>
               <p className="flex items-center gap-1.5 text-xs font-bold"><CircleCheck className="h-3.5 w-3.5 text-green-400" /> Sent via Web3Forms</p>
-              <p className="mt-0.5 text-[11px] opacity-70">Delivered to Ahsha instantly</p>
+              <p className="mt-0.5 text-[11px] opacity-70">Delivered to Sha instantly</p>
             </div>
           </div>
         </div>
@@ -422,7 +422,7 @@ export default function App() {
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1A2E22] text-sm font-bold text-white">01</span>
                 <div>
                   <h3 className="flex items-center gap-2 font-serif text-xl font-bold text-[#1A2E22]"><User className="h-5 w-5 text-[#C65D3A]" /> Sign in — Your Name *</h3>
-                  <p className="text-[13px] text-stone-500">This is how Ahsha will label your sandwich.</p>
+                  <p className="text-[13px] text-stone-500">This is how Sha will label your sandwich.</p>
                 </div>
               </div>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -655,7 +655,7 @@ export default function App() {
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1A2E22] text-white"><KeyRound className="h-5 w-5" /></span>
                     <div>
                       <p className="text-sm font-bold text-[#1A2E22]">Web3Forms Access Key *</p>
-                      <p className="text-xs text-stone-500">Required to send orders to Ahsha's email.</p>
+                      <p className="text-xs text-stone-500">Required to send orders to Sha's email.</p>
                     </div>
                   </div>
                   <button type="button" onClick={() => setShowKeyHelp(!showKeyHelp)} className="inline-flex shrink-0 items-center gap-1 rounded-full bg-white px-3 py-1.5 text-xs font-bold text-[#1A2E22] shadow-sm transition hover:bg-stone-100">
@@ -671,7 +671,7 @@ export default function App() {
                 {errors.accessKey && touched && <p className="mt-1.5 flex items-center gap-1.5 text-[13px] font-medium text-red-600"><CircleAlert className="h-4 w-4" />{errors.accessKey}</p>}
                 {showKeyHelp && (
                   <ol className="mt-3.5 space-y-2 rounded-xl bg-white p-4 text-[13px] leading-relaxed text-stone-600">
-                    <li><span className="font-bold text-[#1A2E22]">1.</span> Go to <a href="https://web3forms.com" target="_blank" rel="noreferrer" className="font-bold text-[#C65D3A] underline underline-offset-2">web3forms.com <ExternalLink className="inline h-3 w-3" /></a> and create a free access key with Ahsha's email.</li>
+                    <li><span className="font-bold text-[#1A2E22]">1.</span> Go to <a href="https://web3forms.com" target="_blank" rel="noreferrer" className="font-bold text-[#C65D3A] underline underline-offset-2">web3forms.com <ExternalLink className="inline h-3 w-3" /></a> and create a free access key with Sha's email.</li>
                     <li><span className="font-bold text-[#1A2E22]">2.</span> Verify the email, then copy the Access Key from your dashboard.</li>
                     <li><span className="font-bold text-[#1A2E22]">3.</span> Paste it above — it's saved in this browser, so guests never see it if you pre-fill it before sharing the link.</li>
                     <li className="flex items-start gap-2 rounded-lg bg-[#FAF5EB] p-2.5"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-[#C65D3A]" /> Tip: As the organizer, paste your key once, then share/bookmark this page. Every guest order will route to your inbox.</li>
@@ -697,7 +697,7 @@ export default function App() {
                 {status === "sending" ? (
                   <>
                     <span className="h-5 w-5 animate-spin rounded-full border-2 border-white/40 border-t-white" />
-                    Sending to Ahsha via Web3Forms…
+                    Sending to Sha via Web3Forms…
                   </>
                 ) : (
                   <>
@@ -705,7 +705,7 @@ export default function App() {
                   </>
                 )}
               </button>
-              <p className="mt-2.5 text-center text-xs text-stone-500">By submitting, your name + choices are emailed to Ahsha Catering via Web3Forms.</p>
+              <p className="mt-2.5 text-center text-xs text-stone-500">By submitting, your name + choices are emailed to Sha's Salad via Web3Forms.</p>
             </section>
           </form>
 
@@ -775,7 +775,7 @@ export default function App() {
 
             <div className="mt-4 rounded-[1.6rem] border border-[#E8DDC9] bg-[#1A2E22] p-6 text-white">
               <p className="flex items-center gap-2 text-sm font-bold"><UtensilsCrossed className="h-4 w-4 text-[#D9A441]" /> Need help or bulk orders?</p>
-              <p className="mt-1.5 text-[13px] leading-relaxed text-white/70">Talk to Ahsha directly for 10+ subs, dietary swaps, or delivery windows.</p>
+              <p className="mt-1.5 text-[13px] leading-relaxed text-white/70">Talk to Sha directly for 10+ subs, dietary swaps, or delivery windows.</p>
               <div className="mt-3.5 flex gap-2">
                 <a href="#faq" className="flex-1 rounded-xl bg-white px-4 py-2.5 text-center text-[13px] font-bold text-[#1A2E22] transition hover:bg-[#F3EAD8]">Read FAQ</a>
                 <a href="#order" className="flex-1 rounded-xl bg-[#C65D3A] px-4 py-2.5 text-center text-[13px] font-bold text-white transition hover:bg-[#A84A2D]">Order now</a>
@@ -836,7 +836,7 @@ export default function App() {
           {[
             { n: "1", t: "Sign in with your name", d: "Type your full name at the top — that's your label, just like writing it on the paper slip.", icon: User },
             { n: "2", t: "Circle your choices", d: "Tap Ham or Turkey, sliced or shredded, then all the veggies & condiments you want.", icon: Sandwich },
-            { n: "3", t: "Submit via Web3Forms", d: "Hit Place Order. Your ticket is emailed instantly to Ahsha — no login, no app needed.", icon: Send },
+            { n: "3", t: "Submit via Web3Forms", d: "Hit Place Order. Your ticket is emailed instantly to Sha — no login, no app needed.", icon: Send },
           ].map((s) => (
             <div key={s.n} className="rounded-[1.6rem] border border-[#E8DDC9] bg-white p-6">
               <div className="flex items-center justify-between">
@@ -862,10 +862,10 @@ export default function App() {
           <h2 className="mt-1 text-center font-serif text-3xl font-bold text-[#1A2E22]">Order FAQ</h2>
           <div className="mt-8 space-y-3">
             {[
-              { q: "Do I need a Web3Forms account to order?", a: "No. Only the organizer (Ahsha) needs to create a free key at web3forms.com once. Guests just fill the form and hit submit — the key you pasted in Step 06 handles delivery." },
+              { q: "Do I need a Web3Forms account to order?", a: "No. Only the organizer (Sha) needs to create a free key at web3forms.com once. Guests just fill the form and hit submit — the key you pasted in Step 06 handles delivery." },
               { q: "Where do orders go?", a: "Straight to the email linked to your Web3Forms Access Key. Subject lines include the order number and guest name, and the body lists meat, cheese, veggies, condiments, quantity, date and notes." },
               { q: "Can I order more than one sub?", a: "Yes — use the Qty stepper in Step 01. If people want different toppings, they should each submit their own ticket with their own name." },
-              { q: "What if I have allergies?", a: "Put them in Special Instructions in Step 06 (e.g. 'allergy: mustard'). For severe allergies, also contact Ahsha directly before the event." },
+              { q: "What if I have allergies?", a: "Put them in Special Instructions in Step 06 (e.g. 'allergy: mustard'). For severe allergies, also contact Sha directly before the event." },
               { q: "Is my access key safe here?", a: "The key is stored only in your browser's localStorage so you don't have to re-paste it. For public shared links, pre-fill it on the organizer's device first — guests won't need to see or change it." },
             ].map((f, i) => (
               <div key={i} className={`overflow-hidden rounded-2xl border transition ${openFaq === i ? "border-[#1A2E22] bg-[#FFFEFB]" : "border-[#E8DDC9] bg-[#FFFEFB]"}`}>
@@ -884,9 +884,9 @@ export default function App() {
       <footer className="bg-[#1A2E22] text-white">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 py-10 sm:px-6 md:flex-row">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white font-serif text-xl font-bold text-[#1A2E22]">A</div>
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white font-serif text-xl font-bold text-[#1A2E22]">S</div>
             <div>
-              <p className="font-serif text-lg font-bold">Ahsha Catering</p>
+              <p className="font-serif text-lg font-bold">Sha's Salad</p>
               <p className="text-xs text-white/60">Sub sandwiches • Made fresh • Served with care</p>
             </div>
           </div>
@@ -894,7 +894,7 @@ export default function App() {
             Orders powered by <a href="https://web3forms.com" target="_blank" rel="noreferrer" className="font-bold text-white underline underline-offset-2">Web3Forms</a>. One ticket per guest. Please submit before the cutoff.
           </p>
         </div>
-        <div className="border-t border-white/10 py-4 text-center text-xs text-white/40">© {new Date().getFullYear()} Ahsha Catering. All rights reserved.</div>
+        <div className="border-t border-white/10 py-4 text-center text-xs text-white/40">© {new Date().getFullYear()} Sha's Salad. All rights reserved.</div>
       </footer>
 
       {/* Success overlay */}
@@ -904,7 +904,7 @@ export default function App() {
             <div className="bg-[#1A2E22] px-7 py-8 text-center text-white">
               <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-500"><Check className="h-8 w-8" strokeWidth={3} /></span>
               <h3 className="mt-4 font-serif text-2xl font-bold">Order sent!</h3>
-              <p className="mt-1 text-sm text-white/70">Thanks {fullName.split(" ")[0] || "friend"} — Ahsha got your ticket.</p>
+              <p className="mt-1 text-sm text-white/70">Thanks {fullName.split(" ")[0] || "friend"} — Sha got your ticket.</p>
               <p className="mx-auto mt-3 inline-block rounded-full bg-white/15 px-4 py-1.5 font-mono text-sm font-bold tracking-wider">{orderNumber}</p>
             </div>
             <div className="px-7 py-6">
