@@ -253,14 +253,14 @@ export default function App() {
 
       {/* Nav */}
       <header className="sticky top-0 z-40 border-b border-[#E8DDC9] bg-[#FAF5EB]/95 backdrop-blur">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1A2E22] font-serif text-xl font-bold text-[#FAF5EB]">
+        <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
+          <div className="flex items-center gap-3.5">
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#1A2E22] font-serif text-3xl font-bold text-[#FAF5EB]">
               S
             </div>
             <div className="leading-tight">
-              <p className="font-serif text-xl font-bold tracking-tight text-[#1A2E22]">Sha's</p>
-              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#C65D3A]">Salad</p>
+              <p className="font-serif text-3xl font-bold tracking-tight text-[#1A2E22]">Sha's</p>
+              <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#C65D3A]">Salad</p>
             </div>
           </div>
           <nav className="hidden items-center gap-7 text-sm font-medium text-stone-600 md:flex">
